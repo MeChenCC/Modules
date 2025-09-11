@@ -2,7 +2,7 @@
 #!desc=融合版[由GithubAction自动更新]，包括墨鱼去开屏2.0、喜马拉雅、哔哩哔哩、微博、KEEP、知乎、百度网盘、高德地图、小红书、网易云、什么值得买、菜鸟、彩云天气、豆瓣网页
 #!author=ddgksf2013
 #!contributor=@blackmatrix7, @app2smile
-#!logtime=2025-09-06 09:11:36
+#!logtime=2025-09-11 09:14:44
 #!homepage=https://github.com/ddgksf2013
 #!tgchannel=https://t.me/ddgksf2021
 #!moduleurl=https://github.com/ddgksf2013/Modules/raw/main/Adblock.sgmodule
@@ -20,9 +20,8 @@
 
 [URL Rewrite]
 
-^https?:\/\/2025.08.27/c393/v2.0.615 - reject
+^https?:\/\/2025.09.06/c393/v2.0.618 - reject
 ^http:\/\/.*babytree\.com/(plough\.do|go_search\/api\/mobile_search_new\/get_multi_search_default_keywords) - reject
-^http:\/\/[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+){1,4}(:\d+)?\/amdc\/mobileDispatch - reject
 ^http:\/\/ads.?s?ervice(retry)?\.(kugou|kglink).(com|cn)\/v\d\/ - reject
 ^http:\/\/app\.api\.d3yuiw4\.com\/api\/app\/ad - reject
 ^http:\/\/gateway2\.etnet\.com\.hk\/etnetApp\/theme\/seasonal\/v30\/theme.json - reject
@@ -597,6 +596,7 @@ Zhihu.Adblock.js =type=http-response, pattern=^https?:\/\/www\.zhihu\.com\/appvi
 Zhihu.Adblock.js =type=http-response, pattern=https://api.zhihu.com/search/hot_search, script-path=https://gist.githubusercontent.com/ddgksf2013/d43179d848586d561dbb968dee93bae8/raw/Zhihu.Adblock.js, requires-body=true, max-size=-1, timeout=60
 abchina.js =type=http-response, pattern=^https?:\/\/mobilepaas\.abchina\.com\.cn:441\/mgw\.htm, script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/master/abchina.js, requires-body=true, max-size=-1, timeout=60
 ahfs.js =type=http-response, pattern=^https?:\/\/.*(xbwpys|ahhhhfs)\.com\/($|[0-9a-zA-Z_/]+\/$), script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/ahfs.js, requires-body=true, max-size=-1, timeout=60
+amdc.js =type=http-response, pattern=^http:\/\/[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+){1,4}(:\d+)?\/amdc\/mobileDispatch, script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/amdc.js, requires-body=true, max-size=-1, timeout=60
 amdc.js =type=http-response, pattern=^http:\/\/amdc\.m\.taobao\.com, script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/amdc.js, requires-body=true, max-size=-1, timeout=60
 baiduCloud.adblock.js =type=http-response, pattern=^https:\/\/pan\.baidu\.com\/feed\/cardinfos, script-path=https://gist.githubusercontent.com/ddgksf2013/f43026707830c7818ee3ba624e383c8d/raw/baiduCloud.adblock.js, requires-body=true, max-size=-1, timeout=60
 baiduCloud.adblock.js =type=http-response, pattern=^https:\/\/pan\.baidu\.com\/rest\/.*\/membership\/user\?method=gamecenter, script-path=https://gist.githubusercontent.com/ddgksf2013/f43026707830c7818ee3ba624e383c8d/raw/baiduCloud.adblock.js, requires-body=true, max-size=-1, timeout=60
