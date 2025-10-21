@@ -7,7 +7,7 @@
 
 [URL Rewrite]
 # > Version
-^https?:\/\/2025.10.08/c397/v2.0.621 - reject
+^https?:\/\/2025.10.18/c398/v2.0.622 - reject
 # > 10
 ^https?:\/\/ftapi\.10jqka\.com\.cn\/futgwapi\/api\/om\/v\d\/ad\/common\/transfer - reject
 # > 139mail
@@ -421,6 +421,8 @@ host-suffix, - reject
 ^https?:\/\/.*zhijianmedia\.cn\/streamAd\/ad\/getAd\?position=HomepageNewsPosition - reject
 # > nbzhuhsou
 ^https?:\/\/.*ziben\.com\/api\/.*\/adverts - reject
+# > nongyeyinhang
+host-suffix, - reject
 # > omofun
 ^https?:\/\/103\.91\.210\.141\:2515\/xgapp\.php\/v2\/top_notice - reject
 # > One
@@ -441,8 +443,6 @@ https://access.mypikpak.com/access_controller/v1/area_accessible - reject
 ^https?:\/\/adpai\.thepaper\.cn\/.+&ad= - reject
 # > pufayinhang
 ^https?:\/\/lban\.spdb\.com\.cn\/mspmk-web-component\/(getAdvList|prefetchAdvList)\.ah - reject
-# > pupumarket
-^https?:\/\/j1\.pupuapi\.com\/client\/marketing\/advertisement - reject
 # > pica
 ^https?:\/\/.*tipatipa\.xyz\/announcements - reject
 # > pansearch
@@ -475,6 +475,7 @@ https://homefront.qunar.com/front/splash/ad - reject
 ^https?:\/\/api\.qd-metro\.com\/ngstatic\/appScreenAds - reject
 # > quchenshi
 ^https?:\/\/mystore-gw\.watsonsvip\.com\.cn\/gfu\/popup\/advert\/launch - reject
+^http:\/\/[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+){1,4}(:\d+)?\/\w+\/resolv - reject
 # > qihangjiaoyu
 ^https?:\/\/mobile\.iqihang\.com\/api\/ark\/web\/v\d\/advert - reject
 # > RenMinRiBao
