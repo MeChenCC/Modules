@@ -2,7 +2,7 @@
 #!desc=融合版[由GithubAction自动更新]，包括墨鱼去开屏2.0、喜马拉雅、哔哩哔哩、微博、KEEP、知乎、百度网盘、高德地图、小红书、网易云、什么值得买、菜鸟、彩云天气、豆瓣网页
 #!author=ddgksf2013
 #!contributor=@blackmatrix7, @app2smile
-#!logtime=2025-10-16 09:15:37
+#!logtime=2025-10-21 09:17:31
 #!homepage=https://github.com/ddgksf2013
 #!tgchannel=https://t.me/ddgksf2021
 #!moduleurl=https://github.com/ddgksf2013/Modules/raw/main/Adblock.sgmodule
@@ -20,8 +20,9 @@
 
 [URL Rewrite]
 
-^https?:\/\/2025.10.08/c397/v2.0.621 - reject
+^https?:\/\/2025.10.18/c398/v2.0.622 - reject
 ^http:\/\/.*babytree\.com/(plough\.do|go_search\/api\/mobile_search_new\/get_multi_search_default_keywords) - reject
+^http:\/\/[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+){1,4}(:\d+)?\/\w+\/resolv - reject
 ^http:\/\/[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+){1,4}(:\d+)?\/v2\/resolv - reject
 ^http:\/\/ads.?s?ervice(retry)?\.(kugou|kglink).(com|cn)\/v\d\/ - reject
 ^http:\/\/app\.api\.d3yuiw4\.com\/api\/app\/ad - reject
@@ -395,7 +396,6 @@
 ^https?:\/\/interface(\d)?\.music\.163\.com\/w?eapi\/(resource-exposure\/)?activity - reject
 ^https?:\/\/iphone\.ac\.qq\.com\/.*\/Support\/(getSystemConf|bootScreen) - reject
 ^https?:\/\/iyes\.youku\.com\/uts/v\d\/start - reject
-^https?:\/\/j1\.pupuapi\.com\/client\/marketing\/advertisement - reject
 ^https?:\/\/jad-api\.jin10\.com\/ad - reject
 ^https?:\/\/jdread-api\.jd\.com\/jdread\/api\/channel\/module\/opens - reject
 ^https?:\/\/jdread-api\.jd\.com\/jdread\/api\/popup - reject
@@ -725,6 +725,7 @@ replace-body.js =type=http-response, pattern=^https?:\/\/api\.m\.jd\.com\/client
 replace-body.js =type=http-response, pattern=^https?:\/\/res.kfc.com.cn\/CRM\/kfcad\/apphome6\/apphome.*json, script-path=https://raw.githubusercontent.com/mieqq/mieqq/master/replace-body.js, requires-body=true, argument=bootStrapAd->ddgksf2013,max-size=-1, timeout=60
 replace-body.js =type=http-response, pattern=^https?:\/\/apapia-sqk\.manmanbuy\.com\/index_json\.ashx, script-path=https://raw.githubusercontent.com/mieqq/mieqq/master/replace-body.js, requires-body=true, argument=splashAD->ddgksf2013,max-size=-1, timeout=60
 replace-body.js =type=http-response, pattern=^https?:\/\/careapi\.oclean\.com\/mall\/v\d\/User\/GetUserCenter, script-path=https://raw.githubusercontent.com/mieqq/mieqq/master/replace-body.js, requires-body=true, argument=banner"->ddgksf2013",max-size=-1, timeout=60
+replace-body.js =type=http-response, pattern=^https?:\/\/j1\.pupuapi\.com\/client\/marketing\/advertisement\/v, script-path=https://raw.githubusercontent.com/mieqq/mieqq/master/replace-body.js, requires-body=true, argument=launch_time_close":\d+->launch_time_close":1660716799999,max-size=-1, timeout=60
 replace-body.js =type=http-response, pattern=^https?:\/\/sh-gateway\.shihuo\.cn\/v\d\/services\/sh-adapi\/home\/screen, script-path=https://raw.githubusercontent.com/mieqq/mieqq/master/replace-body.js, requires-body=true, argument=egin_time":"\d{4}->egin_time":"2099,max-size=-1, timeout=60
 replace-body.js =type=http-response, pattern=^https?:\/\/tft-app\.cdtft\.cn\/gateway-customer\/tftapp\/tft-ams\/api\/appAd, script-path=https://raw.githubusercontent.com/mieqq/mieqq/master/replace-body.js, requires-body=true, argument=officialAdvertResultVo->ddgksf2013,max-size=-1, timeout=60
 replace-body.js =type=http-response, pattern=^https?:\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad, script-path=https://raw.githubusercontent.com/mieqq/mieqq/master/replace-body.js, requires-body=true, argument=advertisement->ddgksf2013,max-size=-1, timeout=60
