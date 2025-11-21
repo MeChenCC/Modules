@@ -5,8 +5,3 @@
 # Surge Module Source: https://github.com/ddgksf2013/Modules
 # Original QX Config Source: https://gist.githubusercontent.com/ddgksf2013/12ef6aad209155e7eb62c5b00c11b9dd/raw/StartUpAds.conf
 
-[URL Rewrite]
-#请使用新地址 https://ddgksf2013.top/rewrite/StartUpAds.conf
-https://please.use.new.address - reject
-https://new.address.is.https://ddgksf2013.top/rewrite/StartUpAds.conf - reject
-
