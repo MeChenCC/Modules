@@ -2,7 +2,7 @@
 #!desc=融合版[由GithubAction自动更新]，包括墨鱼去开屏2.0、喜马拉雅、哔哩哔哩、微博、KEEP、知乎、百度网盘、高德地图、小红书、网易云、什么值得买、菜鸟、彩云天气、豆瓣网页
 #!author=ddgksf2013
 #!contributor=@blackmatrix7, @app2smile
-#!logtime=2025-11-16 09:24:23
+#!logtime=2025-11-21 09:18:43
 #!homepage=https://github.com/ddgksf2013
 #!tgchannel=https://t.me/ddgksf2021
 #!moduleurl=https://github.com/ddgksf2013/Modules/raw/main/Adblock.sgmodule
@@ -20,7 +20,7 @@
 
 [URL Rewrite]
 
-https://please.use.new.address - reject
+^https?:\/\/.*\.xima.*\.com\/discovery-feed\/focus\/queryF - reject
 ^http:\/\/[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+){1,4}(:\d+)?\/v2\/resolv - reject
 ^https://api.bilibili.com/pgc/season/player/cards - reject
 ^https://app.bilibili.com/x/v2/splash/show - reject
@@ -38,7 +38,6 @@ https://please.use.new.address - reject
 ^https?:\/\/.*\.xima.*\.com\/butler-portal\/versionCheck - reject
 ^https?:\/\/.*\.xima.*\.com\/chaos-notice-web\/v1\/message\/preview\/list - reject
 ^https?:\/\/.*\.xima.*\.com\/collector\/xl\/v\d - reject
-^https?:\/\/.*\.xima.*\.com\/discovery-feed\/focus\/queryF - reject
 ^https?:\/\/.*\.xima.*\.com\/discovery-feed\/isShowUserGiftPendant - reject
 ^https?:\/\/.*\.xima.*\.com\/mobile-playpage\/view\/ - reject
 ^https?:\/\/.*\.xima.*\.com\/mobile-user\/unread - reject
@@ -126,7 +125,6 @@ https://please.use.new.address - reject
 https://api.feidee.net/v1/configs/client/configs - reject
 https://community.feidee.com/api/v1/home/top - reject
 https://moneymarket.ssjlicai.com/finance-common-operation-ws/api/actShelve/v1/actShelveShowTipInfo - reject
-https://new.address.is.https://ddgksf2013.top/rewrite/StartUpAds.conf - reject
 https://tg.feidee.com/online_ad/api/search.do - reject
 https://tg.feidee.com/vis-ad-engine-ws/api/show - reject
 https://yun.feidee.net/cab-draw-activity-ws/terminal/v1/draw-record/user-draw-result - reject
